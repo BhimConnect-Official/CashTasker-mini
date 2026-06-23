@@ -2381,7 +2381,7 @@
                 if (!currentUser) return;
                 const u = currentUser;
                 document.getElementById('balanceAmount').textContent = u.balance || 0;
-                const inr = ((u.balance || 0) / 10).toFixed(2);
+                const inr = ((u.balance || 0) / 25).toFixed(2);
                 document.getElementById('balanceINR').textContent = inr;
 
                 document.getElementById('statEarned').textContent = u.totalEarnings || 0;
